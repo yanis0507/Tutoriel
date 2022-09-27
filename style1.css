@@ -1,0 +1,36 @@
+legend
+{
+	color: darkred; 
+	font-weight:bold;
+}
+
+.xio,select{
+	width: 200px;
+	border: 2px solid blue ;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 10px;
+	box-shadow: 1px 1px 1px darkred;
+
+
+}
+
+fieldset
+{
+	background-color: mistyrose;
+	padding: 20px;
+	margin: 10px;
+}
+h1,h2{
+	text-align: center;
+}
+label
+{
+	color: mistyroses;
+}
+
+table
+{
+	border: 2px solid green ;
+	width: 100%;
+}
