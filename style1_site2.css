@@ -1,0 +1,38 @@
+
+h1
+{
+	color: green;
+	font-family: verdana;
+	font-size: 2em;
+}
+button
+{
+	border: 2px solid black;
+	border-radius: 26px;
+	text-align: center;
+	padding: 15px 32px;
+	background-color: palegreen;
+	margin-top: 3px;
+	width: 300px;
+	
+}
+div
+{
+	border: 2px solid green;
+	border-radius: 10px;
+	margin-left: 20%;
+	margin-right: 50%;
+	padding: 2%;
+	width: 50%;
+}
+
+body
+{
+	background-color: black;
+	text-align: center;
+}
+button:hover{
+	color: darkseagreen;
+	background-color: black;
+	border: 2px solid green;
+}

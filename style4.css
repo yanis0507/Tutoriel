@@ -1,0 +1,64 @@
+header
+
+{
+	    font-size: 2rem;
+}
+
+fieldset
+{
+	background-color: royalblue;
+	padding: 20px;
+	margin: 10px;
+}
+table{
+	border : 2px solid black;
+	align-content: center;
+	}
+	
+th, td {
+	border : 1px solid darkblue;
+	padding : 5px;
+	}
+}
+.ans
+
+
+}
+td
+{
+	text-align: center;
+	background-color: white; #00b5ff;
+	border:1px solid #0000ff ;
+}
+
+legend
+{
+	color: blue;
+	left: ;
+	right: ;
+	font-weight: bold;
+	text-align: center;
+}
+h1,h2 
+{text-align: center;
+	color: skyblue;
+}
+
+
+{
+	background-color: deepskyblue;
+	padding: 40px;
+	margin: 70px;
+}
+text  {
+	position: absolute;
+	right: 85% ;
+	top:  35%;
+	
+   ;}
+
+  u  {
+	position: absolute;
+	 ;
+	top: 58%;
+}

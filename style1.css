@@ -5,8 +5,9 @@ legend
 }
 
 .xio,select{
-	width: 200px;
-	border: 2px solid blue ;
+	
+	width: 100px;
+	border: 2px solid darkred ;
 	border-radius: 5px;
 	padding: 3px;
 	margin: 10px;
@@ -31,6 +32,6 @@ label
 
 table
 {
-	border: 2px solid green ;
+	border: 1px solid green  ;
 	width: 100%;
 }
