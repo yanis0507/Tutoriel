@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <style type="text/css">
+	h1{
+		text-align: center;
+		border: 4em;
+		 
+    }
+
+	
+	table{
+		background: grey;
+		width: 2em;
+		position: center;
+        margin-left: 25%;
+        text-align: center;
+	}
+	input{
+		border-radius: 2em;
+		height: 2em;
+		text-align: center;
+	    padding: 7px;
+
+
+	}
+	tr,td{
+		border: 1px solid black;
+		width: 2em;
+		height: 13PX;
+		padding: 7px;
+		border-radius: 2em;
+		margin: 2em;
+		font-size: 25px;
+
+	}
+	button{
+        font-size: 1em;
+        border-radius: 26px;
+        display: inline-block;
+        width: 100%;
+        height: 2em;
+
+
+	}
+
+	a{
+		text-align: center;
+	}
+
+	
+
+
+</style>
+
+
+
+
+
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <script type="text/javascript">
+
+    	function calculer() 
+    	{
+    	
+    
+    	var a = document.getElementById("P1").value;
+    	var b = document.getElementById("Q1").value;
+    	var c =Number(a)*Number(b);
+        R1.value = c;
+                
+
+
+
+        var d = document.getElementById("P2").value;
+    	var e = document.getElementById("Q2").value;
+    	var f =Number(d)*Number(e);
+        R2.value = f;
+                
+
+
+        var g = document.getElementById("P3").value;
+    	var h = document.getElementById("Q3").value;
+    	var i =Number(g)*Number(h);
+        R3.value = i;
+                
+
+
+        var j = document.getElementById("P4").value;
+    	var k = document.getElementById("Q4").value;
+    	var l =Number(j)*Number(k);
+        R4.value = l;
+
+        var m = document.getElementById("R1").value;
+    	var n = document.getElementById("R2").value;
+    	var o = document.getElementById("R3").value;
+    	var p = document.getElementById("R4").value;
+        var q =Number(m)+Number(n)+Number(o)+Number(p);
+        R5.value = q;
+
+         }
+         
+         
+         
+
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+                        <h1>Facture en Javacript</h1>
+<table>
+	<tr>
+        <td>Article</td>
+        <td>Prix</td>
+        <td>Quantité</td>
+        <td>Résultat</td>
+	</tr>
+	<tr>
+		<td><input type="text" name="A1" placeholder="entrez un article"></td>
+		<td><input type="text" name="P1" id="P1" placeholder="0"></td>
+		<td><input type="text" name="Q1" id="Q1"placeholder="0"></td>
+		<td><input type="text" name="R1" id="R1" placeholder="0"></td>
+		
+	</tr>
+    <tr>
+		<td><input type="text" name="A2" placeholder="Entrez un artcicle"></td>
+		<td><input type="text" name="P2" id="P2" placeholder="0"></td>
+		<td><input type="text" name="Q2" id="Q2" placeholder="0"></td>
+		<td><input type="text" name="R2" id="R2" placeholder="0"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="A3" placeholder="Entrez un artcicle"></td>
+		<td><input type="text" name="P3" id="P3" placeholder="0"></td>
+		<td><input type="text" name="Q3" id="Q3" placeholder="0"></td>
+		<td><input type="text" name="R3" id="R3"placeholder="0"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="A4" placeholder="Entrez un artcicle"></td>
+		<td><input type="text" name="P4" id="P4" placeholder="0"></td>
+		<td><input type="text" name="Q4" id="Q4" placeholder="0"></td>
+		<td><input type="text" name="R4" id="R4" placeholder="0"></td>
+
+	<tr>
+	<td></td>
+                   
+    	
+   <td><button onClick="window.location.reload();">réinitialiser</button></td>
+   <td><button onclick="calculer();">résultat</button></td>
+	<td><input type="text" name="R5" id="R5" placeholder="0"></td>
+</tr>
+
+
+
+
+
+</table>
+<br><a href="index.html"     target="f2"> Acceuil</a>
+
+
+
+
+
+</body>
+</html>
