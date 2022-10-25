@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function calcul_moyenne() 
+	{
+              
+
+
+		var note1=prompt("donner la première note:");
+		var note2=prompt("donner la deuxième note:");
+		var note3=prompt("donner la troisième note:");
+
+
+    var somme = note1*2 + note2*3 + note3*3;
+    document.write("Voici la somme:       "+somme+"  ");
+
+    var moyenne = somme/8;
+    document.write("Voici la moyenne:     "+moyenne+"  ");
+
+    if (moyenne>=10)
+    document.write("vous êtes admis");
+    else
+    document.write("vous êtes redoublant");
+	}
+
+	function age_test()
+	
+    {
+      var age=prompt("donner votre âge");
+      if (age>100 || age<=0)
+
+      {
+        document.bgColor="red";
+      	alert("Attention age invalide");
+             
+      }
+
+      else
+           {  
+        document.bgColor="green";
+      	 alert("age valide");
+      	
+           } 
+
+    }
+
+
+
+    function simple_affichage()
+    {
+    	var nom =prompt("donner votre nom ");
+    	var prenom =prompt("donner votre prénom ");
+    	document.write("<div style='border:4px solid blue; background-color:brown ;width:40%; height:10%; margin:auto; text-align:center; padding-top:15px; font-size:2em; border-radius:30px;'>");
+    	document.write( "<p1 style='color:blue';> Bonjour " + prenom +"   "+  nom+ "</p1>");
+
+    	document.write("</div>");    
+    }
+
+    function tester_couleur()
+    {
+
+    	var couleur = prompt("donner une couleur:");
+        if (couleur=="rouge" || couleur=="ROUGE")
+            document.bgColor="red";
+
+       else if (couleur == "bleu"  || couleur == "BLEU")
+            document.bgColor="blue";
+
+       else if (couleur == "vert"  || couleur == "VERT")
+            document.bgColor="green";
+
+       else
+        	alert("couleur inexistante");
+        
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<h1> 4 Exercices Simples en JAVASCRIPT</h1>
+<button onclick="calcul_moyenne()">calculer la moyenne </button>
+<button onclick="age_test()">tester l'age</button>
+<button onclick="simple_affichage()">Affichage simple</button>
+<button onclick="tester_couleur()">Tester couleur</button>
+
+
+
+
+
+
+
+
+</body>
+</html>
