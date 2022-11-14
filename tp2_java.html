@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function calculer() 
+		{	
+			
+			var a = document.getElementById("t1").value; 
+			var b = document.getElementById("t2").value;
+            var c =Number(a)+Number(b);
+            t3.value = c;
+        }    
+
+        </script>
+</head>
+<body>
+	<fieldset border="2">
+		<legend>calculatrice</legend>
+
+		
+      	<input type="text" name="t1" id="t1" placeholder="saisir une valeur">
+        <input type="text" name="t1" id="t2" placeholder="saisir une valeur">
+      	<input type="text" name="t1" id="t3" placeholder="Résultat" readonly>
+
+        <button onclick="calculer();">calculer</button>
+
+     
+      	</fieldset>
+
+      		<script type="text/javascript">
+
+
+           function calcul_moyenne()
+           {
+ 
+            var d = document.getElementById("t4").value; 
+			var e = document.getElementById("t6").value;
+			var f = document.getElementById("t7").value;
+            var g = (Number(d)+Number(e)+Number(f))/3; 
+            t5.value = g;
+
+            var z = document.getElementById("").value;
+            var y = document.getElementById("").value;
+		   
+		   if (g>=10) alert('admis');
+		   else alert('refusé');
+           
+
+
+		   
+		 
+
+		}
+        
+       
+        </script>
+
+      	<fieldset border="2">
+      	               <legend>Relevé de notes</legend>
+      	    <table>
+      	<tr>
+        <tr>
+
+             <td>Note 1 :</td>
+             <td><input type="text" name="t4" id="t4"  placeholder="Saisir une valeur"></td>
+             <td></td>
+             
+             <td>Votre moyenne :</td>
+             <td><input type="text" name="t5" id="t5"  placeholder="Moyenne"></td>
+        </tr>
+         <tr>
+             <td>Note 2 :</td>
+             <td><input type="text" name="t6" id="t6"  placeholder="Saisir une valeur"></td>
+             <td><button onclick="calcul_moyenne();">résultat</button></td>
+        </tr> 
+             <td>Note 3 :</td>
+
+             <td><input type="text" name="t7" id="t7"  placeholder="Saisir une valeur"></td>
+             <td></td>
+
+             <td>Le résultat :</td>
+             <td><input type="text" name="t8" id="t8"  placeholder="Mention"></td>
+        </tr>     
+        <br><a href="index.html"target="f2"> Acceuil</a>
+
+
+        </table>
+              
+        </fieldset>
+
+                 
+        
+          
+    
+
+      		
+      	
+
+
+		<style type="text/css">
+		legend{
+			border: 3px solid black;
+			border-radius: 26px;
+			padding: 15px;
+
+
+		}
+		fieldset{
+			padding: 15px;
+			width: 60%;
+			height: 20%;
+		}
+		
+
+     
+
+	
+		
+</style>
+
+	</fieldset>
+
+</body>
+</html>
