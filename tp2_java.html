@@ -37,23 +37,25 @@
            {
  
             var d = document.getElementById("t4").value; 
-			var e = document.getElementById("t6").value;
-			var f = document.getElementById("t7").value;
+		  var e = document.getElementById("t6").value;
+		  var f = document.getElementById("t7").value;
             var g = (Number(d)+Number(e)+Number(f))/3; 
             t5.value = g;
-
-            var z = document.getElementById("").value;
-            var y = document.getElementById("").value;
-		   
-		   if (g>=10) alert('admis');
-		   else alert('refusé');
+              
            
-
-
+           
 		   
-		 
+		   if (g<10)
+		   	t8.value = "refusé";
+		   else if (g<12)
+		     t8.value = "admis passable";
+		   else if (g<15)
+               t8.value = "Admis bien gg";
+             else 
+             	t8.value= "très bien";
 
 		}
+		
         
        
         </script>
