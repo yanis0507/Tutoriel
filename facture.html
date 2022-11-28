@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/igoud/OneDrive/Bureau/D%C3%A9roulant/facture.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<style type="text/css">
+		#right{
+             top: 0px;
+             right: 0px;
+             position: absolute;
+
+		}
+		#entete{
+			background-color: maroon;
+		}
+		#completer{
+			width: 100%;
+		}
+		
+		.placeholder{
+			border: no-border;			
+		}
+		div{
+			text-align: left;
+		}
+		input{
+			border: transparent;
+		}
+		#remplissage{
+			
+			right: 30%;
+			
+		}
+		#res{
+			right: 0px;
+			position: absolute;
+		}
+		#res.td{
+          border-bottom: absolute;
+          text-align: right;
+		}
+
+	</style>
+          
+          <script type="text/javascript">
+          
+		
+		
+			function Calculer() 
+		{
+		
+			var a = document.getElementById("a2").value;
+			var b = document.getElementById("a3").value;
+			var c = Number(a)*Number(b);
+			a4.value = c;
+		
+		
+			var aa = document.getElementById("b2").value;
+			var ba = document.getElementById("b3").value;
+			var ca = Number(aa)*Number(ba);
+			b4.value = ca;
+		
+			var ab = document.getElementById("c2").value;
+			var bb = document.getElementById("c3").value;
+			var cb = Number(ab)*Number(bb);
+			c4.value = cb;
+		
+		
+			var ac = document.getElementById("d2").value;
+			var bc = document.getElementById("d3").value;
+			var cc = Number(ac)*Number(bc);
+			d4.value = cc;
+				
+			var ad = document.getElementById("e2").value;
+			var bd = document.getElementById("e3").value;
+			var cd = Number(ad)*Number(bd);
+			e4.value = cd;
+
+			var ae = document.getElementById("f2").value;
+			var be = document.getElementById("f3").value;
+			var ce = Number(ae)*Number(be);
+			f4.value = ce;
+
+			var af = document.getElementById("g2").value;
+			var bf = document.getElementById("g3").value;
+			var cf = Number(af)*Number(bf);
+			g4.value = cf;
+
+			var ag = document.getElementById("h2").value;
+			var bg = document.getElementById("h3").value;
+			var cg = Number(ag)*Number(bg);
+			h4.value = cg;
+
+			var ah = Number(c)+Number(ca)+Number(cb)+Number(cc)+Number(cd)+Number(ce)+Number(ce)+Number(cf)+Number(cg);
+			i1.value = ah;
+
+			var ai = document.getElementById("j1").value;
+			var bi = Number(ah)-Number(ai);
+			k1.value = bi;
+
+			var aj = document.getElementById("l1").value;
+			var bj = Number(aj)*Number(bi)
+			m1.value = bj;
+
+			var ak = document.getElementById("n1").value;
+			var bk = Number(ak)+ Number(bj)+Number(bi)
+			o1.value = bk
+		}
+		
+		
+	function reint()
+	{
+		window.location.reload();
+	}
+	</script>
+        
+          		
+          	
+          	
+
+          
+
+	<div id="entete">
+	<table>
+
+		<tbody><tr>
+        
+	    <td rowspan="3" class="logo"><img src="./facture_files/logof.jpeg" width="150px" height="150px"></td>
+		<td><input type="text" placeholder="Nom de la compagnie"></td>
+	</tr>
+	<tr>
+		<td><input type="text" placeholder="Adresse postale"></td>
+	</tr>
+	<tr><td><input type="text" placeholder="Détail du contact"></td>
+	</tr>
+
+</tbody></table>
+</div>
+
+<div id="right">
+	<h1>Facture</h1><br>
+	<input type="date" id=" " placeholder="date" value="01-01-00" min="2000-01-01" max="2100-12-31"><br>
+	<input type="text" name="nf" placeholder="No de facture">
+   </div>
+        
+   <div id="remplissage">conditions de paiement, par exemlpe: du dans X jours&gt;
+   	<table id="completer">
+   		<tbody><tr>
+   			<td>Destinaire</td>
+   			<td>Envoyer à</td>
+   		</tr>
+   		<tr>
+   		<td><input type="text" placeholder="&lt;Nom&gt;"></td>
+   		<td><input type="text" placeholder="&lt;Nom&gt;"></td>	
+	    </tr>
+	    <tr>
+   		<td><input type="text" placeholder="&lt;Nom de la société&gt;"></td>
+   		<td><input type="text" placeholder="&lt;Nom de la société&gt;"></td>	
+	    </tr>
+	    <tr>
+   		<td><input type="text" placeholder="&lt;Adresse postale&gt;"></td>
+   		<td><input type="text" placeholder="&lt;Adresse postale&gt;"></td>	
+	    </tr>
+	    <tr>
+   		<td><input type="text" placeholder="&lt;téléphone&gt;"></td>
+   		<td><input type="text" placeholder="&lt;téléphone&gt;"></td>	
+	    </tr>
+	    <tr><td><input type="text" placeholder="&lt;email&gt;"></td>
+   		<td><input type="text" placeholder="&lt;email&gt;"></td>	
+	    </tr>
+   	</tbody></table>
+   </div>
+
+   <div id="facture">
+   	<table>
+   		<tbody><tr>
+   			<td style="background-color: orange;">Description</td>
+   			<td style="background-color: orange;">Quanitié</td>
+   			<td style="background-color: orange;">Prix unitaire</td>
+   			<td style="background-color: orange;">Total</td>
+   		</tr>
+   		<tr>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="a1" id="a1"></td>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="a2" id="a2"></td>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="a3" id="a3"></td>
+   			<td><input type="text" style="border: transparent;background-color: grey;" placeholder="0,00" ;="" name="a4" id="a4"></td>
+        </tr>
+   			<tr><td><input type="text" style="border: transparent; background-color: ;" name="b1" id="b1"></td>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="b2" id="b2"></td>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="b3" id="b3"></td>
+   			<td><input type="text" style="border: transparent;background-color: ;" placeholder="0,00" ;="" name="b4" id="b4"></td>
+        </tr><tr>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="c1" id="c2"></td>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="c2" id="c2"></td>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="c3" id="c3"></td>
+   			<td><input type="text" style="border: transparent;background-color:grey ;" placeholder="0,00" ;="" name="c4" id="c4"></td>
+        </tr>
+        
+        <tr>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="d1" id="d1"></td>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="d2" id="d2"></td>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="d3" id="d3"></td>
+   			<td><input type="text" style="border: transparent;background-color: ;" placeholder="0,00" ;="" name="d4" id="d4"></td>
+   	    </tr>
+        <tr>
+   	    <td><input type="text" style="border: transparent; background-color: grey;" name="e1" id="e1"></td>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="e2" id="e2"></td>
+   			<td><input type="text" style="border: transparent; background-color: grey;" name="e3" id="e3"></td>
+   			<td><input type="text" style="border: transparent;background-color: grey;" placeholder="0,00" ;="" name="e4" id="e4"></td>
+   	    </tr>
+   	    <tr>
+   	    <td><input type="text" style="border: transparent; background-color: ;" name="f1" id="f1"></td>
+   			<td><input type="text" style="border: transparent; background-color:;" name="f2" id="f2"></td>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="f3" id="f3"></td>
+   			<td><input type="text" style="border: transparent;background-color: ;" placeholder="0,00" ;="" name="f4" id="f4"></td>
+   	    </tr>
+   	    <tr>
+   	    <td><input type="text" style="border: transparent; background-color: grey;" name="g1" id="g1"></td>
+   			<td><input type="text" style="border: transparent; background-color:grey ;" name="g2" id="g2"></td>
+   			<td><input type="text" style="border: transparent; background-color:grey ;" name="g3" id="g3"></td>
+   			<td><input type="text" style="border: transparent;background-color:grey ;" placeholder="0,00" ;="" name="g4" id="g4"></td>
+   	    </tr>
+   	    <tr>
+   	    <td><input type="text" style="border: transparent; background-color:;" name="h1" id="h1"></td>
+   			<td><input type="text" style="border: transparent; background-color: ;" name="h2" id="h2"></td>
+   			<td><input type="text" style="border: transparent; background-color:;" name="h3" id="h3"></td>
+   			<td><input type="text" style="border: transparent;background-color:;" placeholder="0,00" ;="" name="h4" id="h4"></td>
+   	    
+   	    </tr>
+   	    </tbody></table>
+   </div>
+   	<tr>
+   </div>
+   <div id="note2">Remarques, notes et insctructions de paiement
+   </div>
+   <div id="resultat">
+   	<div style="text-align: center;"><br>
+	 </div><table id="res">
+   		<tbody><tr>
+   			<td>Sous-Total</td>
+   			<td><input type="text" name="i1" id="i1" style="border: transparent;" placeholder="0,00"></td>
+
+   		</tr>
+   		<tr>
+   			<td>Remise</td>
+   			<td><input type="text" name="j1" id="j1" style="border: transparent;" placeholder="0,00"></td>
+
+   		</tr>
+   		<tr>
+   			<td>Sous Total moins les remises</td>
+   			<td><input type="text" name="k1" id="k1"style="border: transparent;" placeholder="0,00"></td>
+
+   		</tr>
+   		<tr>
+   			<td>taux d'imposition</td>
+   			<td><input type="text" name="l1" id="l1" style="border: transparent;" placeholder="0,00%"></td>
+
+   		</tr>
+   		<tr>
+   			<td>taxe total</td>
+   			<td><input type="text" name="m1" id="m1" style="border: transparent;" placeholder="0,00"></td>
+
+   		</tr>
+   		<tr>
+   			<td>expediton, manutention</td>
+   			<td><input type="text" name="n1" id="n1" style="border: transparent;" placeholder="0,00"></td>
+
+   		</tr>
+   		<tr>
+   			<td>SOlDE DÛ</td>
+   			<td><input type="text" name="o1" id="o1" style="border: transparent;font-weight: bold;" placeholder="0,00€"></td>
+
+   		</tr>
+  
+   
+
+
+
+<tr><td><button onclick="Calculer();">résultat</button></td>
+	 <td><button onclick="window.location.reload();">réinitialiser</button></td>
+</tr></tbody></table></div></body></html>

@@ -3,38 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+	</title>
 	<script type="text/javascript">
-		 
-		 function parite()
-		 {         var nbr;
+		function swit()
+		{        var a= "";
 
-            nbr = Number(document.getElementById("myInput").value); 
-			 if (nbr%2==0) { 
 
-			 alert("LE NOMBRE est pair");
+        a =document.fo.a.value;
+        document.fo.a.value =document.fo.b.value;
+        document.fo.b.value = a;
 
-		 }
-		 else
-		 {  
-		 	alert("LE NOMBRE est impair");
-            
-		 }
-
-		  }
-
-              
+		}
 
 
 	</script>
-	<title></title>
-		 
+
 </head>
-<body> 
-	
-		Entrez un nombre:<input type="text" name="myInput" id="myInput"><br>
-        <button onclick="parite()">Vérifier</button>
-    
-    
+<body>
+<form name="fo"> 
+
+    <input type="text" name="a" id="a"><br>
+    <input type="text" name="b" id="b"><br>
+    <input type="button" value="permutter" onclick="swit()">
+
+
 
 </body>
 </html>
