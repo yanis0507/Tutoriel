@@ -1,0 +1,35 @@
+body{
+    background-color: pink;
+}
+
+.container
+{
+   width: 70%;
+   align-items: center;
+   margin: auto;
+   border: 2px solid rebeccapurple;
+   border-radius: 16px;
+}
+
+input {
+   margin: 50px;
+   border-color: brown;
+   border-radius: 16px;
+   width: 300px;
+   height: 100%;
+   padding: 30px;
+      }
+button{
+padding: 30px;
+margin: 30px;
+}
+#result
+{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 50px; 
+}
