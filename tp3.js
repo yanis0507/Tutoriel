@@ -74,3 +74,41 @@ function  fun_switch()
     }
 
 }
+
+var nbClic=0;
+function clic()
+{
+    nbClic++; //incrémente nbClic de 1
+    if (nbClic>=3){
+        alert('perdu !!!\n vous avez cliqué ' +nbClic+ 'fois' );
+    }
+}
+
+
+function raz()
+ {  
+nbClic=0;
+  }
+
+    function chaine_caractere()
+{
+    var chaine= prompt("donner un mot")
+    document.write(chaine.toUpperCase()+"<br>");
+    document.write(chaine.toUpperCase()+"<br>");
+document.write("la chaine contient "+chaine.length+" caractères <br>");
+document.write("la première lettre est "+chaine.substr(0,1)+ "<br>");
+
+
+}
+
+function chaine_caractere2()
+{
+    var chaine= prompt("donner un mot")
+    document.write("<b> Le mot saisi est:  "+chaine+ " </b><br>");
+document.write("la première lettre est: " +chaine.substr(0,1)+ "<br>");
+document.write("la chaine contient:  " +chaine.length+" caractères <br>");
+document.write("la dernière lettre est:  "+chaine.substr(-1)+ "<br>");
+
+
+
+}
