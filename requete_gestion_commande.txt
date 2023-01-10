@@ -1,0 +1,158 @@
+Formulez en SQL les requêtes suivantes :
+
+
+a)      Les Clients dont le noTéléphone  = 620002269
+
+SELECT *
+FROM `clients`
+WHERE `num_telephone` =620002269
+LIMIT 0 , 30
+
+
+b)      Afficher le détail de toutes les commandes effectuées par le client 67890
+
+
+SELECT *
+FROM `commandes`
+WHERE `client_id` =67890
+LIMIT 0 , 30
+
+
+
+c)      Afficher les 2 commandes les plus récentes
+
+SELECT *
+FROM commandes
+ORDER BY `com_date` DESC
+LIMIT 0 , 30
+
+
+d)      Afficher les informations sur les produits ayant un poids > 4kg du plus lourd vers le le plus leger.
+
+SELECT *
+FROM `produits`
+WHERE `produit_poids` <4
+ORDER BY `produit_poids` DESC
+LIMIT 0 , 30
+
+
+
+
+e)      Afficher le nom des articles le plus cher et le moins cher ( utiliser Fonction min et max)
+
+SELECT *
+FROM `produits`
+ORDER BY `produit_prix` DESC
+LIMIT 0 , 30
+
+
+
+
+
+f)       Le noCommande et la dateCommande des Commandes du Client #12345 dont le noCommande est supérieur à 200.
+
+
+
+
+
+g)      Modifier le nom de la colonne com_date par date_commande
+
+ALTER TABLE commandes CHANGE `com_date` `date_commande` DATE;
+
+
+h)      Supprimer la colonne client_dep
+
+ALTER TABLE clients DROP COLUMN `client_dep`
+
+
+
+i)       Ajouter la colonne date_naissance dans la table client
+
+ALTER TABLE clients ADD date_naissance DATE;
+
+
+j)       Afficher les clients masculins qui habitent à paris
+
+SELECT *
+FROM `clients`
+WHERE `client_civilite` = 'homme'
+LIMIT 0 , 30
+
+k)      Afficher le nombre de clients qui sont nés avant 01/01/1980
+
+
+SELECT *
+FROM clients
+WHERE date_naissance < ( DATE '1980-01-01' )
+LIMIT 0 , 30
+
+l)        Les noArticle et description des Articles dont le prixUnitaire est entre $10 et $20.
+
+SELECT *
+FROM `produits`
+WHERE `produit_prix`
+BETWEEN 10
+AND 20
+LIMIT 0 , 30
+
+m)    Le noClient, noTéléphone du Client et noCommande pour les Commandes faites le 2023-01-09.
+
+
+
+n)      Les noArticles commandés au moins une fois par le Client #10 après le 01/06/2000.
+
+
+o)     Les noLivraisons correspondant aux Commandes faites par le Client #10.
+p)      Les noCommandes des Commandes qui ont été placées à la même date que la Commande #2.
+q)      n) Les Articles dont la description débute par la lettre « C ». SELECT * FROM Article WHERE description LIKE 'C%'
+r)       Afficher le détail des commandes effectuées en 2016
+
+ SELECT *
+FROM `commandes`
+WHERE YEAR( `date_commande` ) =2023
+LIMIT 0 , 30
+
+s)      Le Clients dont le noTéléphone n'est pas NULL
+
+SELECT *
+FROM `clients`
+WHERE `num_telephone` IS NOT NULL
+LIMIT 0 , 30
+
+t)       Afficher la moyenne des prix des articles.
+
+
+SELECT AVG( `produit_prix` )
+FROM produits
+
+u)      Afficher la somme des prix des articles.
+
+SELECT SUM( `produit_prix` )
+FROM `produits`
+
+
+v)      Le montant total de la Commande #1 avant et après la taxe de 15%.
+
+
+
+
+
+w)     Les Articles dont le prix est supérieur à la moyenne.
+
+SELECT AVG>( `produit_prix` )
+FROM produits
+
+
+
+x)      Supprimer les Articles ayant un stock null ( =0)
+
+DELETE FROM `produits` WHERE `produit_stock` IS NULL
+
+y)      Augmenter la quantité commandée de 2 unités pour la Commande #1 et l'Article #10.
+
+
+
+
+
+
+
